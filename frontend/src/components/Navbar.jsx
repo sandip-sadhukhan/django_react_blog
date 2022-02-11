@@ -15,7 +15,9 @@ const Navbar = () => {
   return (
     <Box px={[4, 8]} py={4} bgColor={useColorModeValue("gray.100", "gray.900")}>
       <Flex justifyContent="space-between" alignItems="center">
-        <Heading size={["sm", "md", "md", "lg", "lg"]}>Mi-Blog</Heading>
+        <Heading size={["sm", "md", "md", "lg", "lg"]} as={Link} to="/">
+          Mi-Blog
+        </Heading>
         <Flex>
           <Button as={Link} to="/" mx={[null, 1]} variant="ghost">
             Home

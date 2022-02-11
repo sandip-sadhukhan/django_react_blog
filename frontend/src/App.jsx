@@ -4,6 +4,7 @@ import Layout from "./hocs/Layout";
 import Home from "./containers/Home";
 import About from "./containers/About";
 import BlogPost from "./containers/BlogPost";
+import NotFound from "./containers/NotFound";
 
 const App = () => {
   return (
@@ -13,6 +14,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/notfound" element={<NotFound />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
     </BrowserRouter>
